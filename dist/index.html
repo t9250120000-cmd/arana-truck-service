@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>АРАНА — ремонт грузовиков и полуприцепов</title>
+    <title>Грузовой автосервис в Мещерино — ремонт грузовиков | АРАНА</title>
     <meta
       name="description"
-      content="Грузовой автосервис АРАНА: ремонт грузовиков, полуприцепов и рефрижераторов, компьютерная и выездная диагностика. Связь с мастером по телефону и WhatsApp."
+      content="АРАНА в Мещерино: ремонт грузовиков MAN и Mercedes, полуприцепов и рефрижераторов. Диагностика в сервисе и на выезде. Позвоните мастеру: +7 915 427-61-11."
     />
     <meta name="theme-color" content="#101820" />
     <link rel="canonical" href="https://t9250120000-cmd.github.io/arana-truck-service/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:url" content="https://t9250120000-cmd.github.io/arana-truck-service/" />
-    <meta property="og:title" content="АРАНА — грузовик снова в рейсе" />
+    <meta property="og:title" content="АРАНА — грузовой автосервис в Мещерино" />
     <meta
       property="og:description"
       content="Ремонт грузовиков, полуприцепов и рефрижераторов. Диагностика в сервисе и на выезде."
@@ -34,6 +35,8 @@
       {
         "@context": "https://schema.org",
         "@type": "AutoRepair",
+        "@id": "https://t9250120000-cmd.github.io/arana-truck-service/#service",
+        "url": "https://t9250120000-cmd.github.io/arana-truck-service/",
         "name": "АРАНА",
         "legalName": "ООО АРАНА ЛОГИСТИК",
         "description": "Ремонт грузовых автомобилей, коммерческой техники, полуприцепов и рефрижераторов.",
@@ -105,7 +108,7 @@
             </a>
             <a
               class="button button-ghost wa-link"
-              href="https://wa.me/79154276111?text=Здравствуйте%21%20Нужна%20помощь%20с%20грузовиком."
+              href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Нужна%20помощь%20с%20грузовиком."
               target="_blank"
               rel="noopener"
             >
@@ -121,7 +124,7 @@
         </div>
 
         <div class="hero-visual reveal" aria-label="Грузовик в сервисе АРАНА">
-          <img src="assets/diagnostic.jpg" alt="Грузовой автомобиль на территории сервиса АРАНА" />
+          <img src="assets/diagnostic.jpg" width="768" height="1024" fetchpriority="high" decoding="async" alt="Грузовой автомобиль на территории сервиса АРАНА" />
           <div class="visual-scanline" aria-hidden="true"></div>
           <div class="service-ticket">
             <div class="ticket-head">
@@ -153,44 +156,44 @@
 
         <div class="diagnostic-panel reveal">
           <div class="symptom-grid" role="group" aria-label="Выберите неисправность">
-            <button class="symptom is-selected" type="button" data-symptom="Не запускается двигатель">
+            <button class="symptom is-selected" type="button" aria-pressed="true" data-symptom="Не запускается двигатель">
               <span class="symptom-icon" aria-hidden="true">↯</span>
               <span><strong>Не заводится</strong><small>Стартер, питание, электроника</small></span>
             </button>
-            <button class="symptom" type="button" data-symptom="Горит ошибка на панели">
+            <button class="symptom" type="button" aria-pressed="false" data-symptom="Горит ошибка на панели">
               <span class="symptom-icon" aria-hidden="true">!</span>
               <span><strong>Горит ошибка</strong><small>Компьютерная диагностика</small></span>
             </button>
-            <button class="symptom" type="button" data-symptom="Проблема с тормозами или ходовой">
+            <button class="symptom" type="button" aria-pressed="false" data-symptom="Проблема с тормозами или ходовой">
               <span class="symptom-icon" aria-hidden="true">◉</span>
               <span><strong>Тормоза / ходовая</strong><small>Грузовик или полуприцеп</small></span>
             </button>
-            <button class="symptom" type="button" data-symptom="Не работает рефрижератор">
+            <button class="symptom" type="button" aria-pressed="false" data-symptom="Не работает рефрижератор">
               <span class="symptom-icon" aria-hidden="true">❄</span>
               <span><strong>Рефрижератор</strong><small>Установка или кузов</small></span>
             </button>
-            <button class="symptom" type="button" data-symptom="Машина не может доехать до сервиса">
+            <button class="symptom" type="button" aria-pressed="false" data-symptom="Машина не может доехать до сервиса">
               <span class="symptom-icon" aria-hidden="true">→</span>
               <span><strong>Нужен выезд</strong><small>Диагностика на месте</small></span>
             </button>
-            <button class="symptom" type="button" data-symptom="Нужна консультация по ремонту">
+            <button class="symptom" type="button" aria-pressed="false" data-symptom="Нужна консультация по ремонту">
               <span class="symptom-icon" aria-hidden="true">?</span>
               <span><strong>Другая проблема</strong><small>Спросить мастера</small></span>
             </button>
           </div>
 
           <aside class="dispatch-card" aria-live="polite">
-            <div class="dispatch-top"><span>КАНАЛ СВЯЗИ</span><b>ONLINE</b></div>
+            <div class="dispatch-top"><span>СВЯЗЬ С МАСТЕРОМ</span><b>WHATSAPP</b></div>
             <p class="dispatch-label">Сообщение мастеру:</p>
             <p id="selected-symptom" class="dispatch-message">Не запускается двигатель</p>
             <a
               id="diagnostic-whatsapp"
               class="button button-primary"
-              href="https://wa.me/79154276111?text=Здравствуйте%21%20Не%20запускается%20двигатель.%20Подскажите%2C%20пожалуйста%2C%20как%20лучше%20поступить."
+              href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Не%20запускается%20двигатель.%20Подскажите%2C%20пожалуйста%2C%20как%20лучше%20поступить."
               target="_blank"
               rel="noopener"
-            >Отправить в WhatsApp</a>
-            <small>Ответит мастер. Это не форма и не заявка в очередь.</small>
+            >Перейти в WhatsApp</a>
+            <small>Откроется чат с готовым текстом. Отправьте сообщение в WhatsApp, чтобы мастер получил обращение.</small>
           </aside>
         </div>
       </section>
@@ -206,7 +209,7 @@
 
         <div class="service-grid">
           <article class="service-card service-card-feature reveal">
-            <img src="assets/workshop.jpg" alt="Ремонт грузового автомобиля в ремзоне" />
+            <img src="assets/workshop.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="Ремонт грузового автомобиля в ремзоне" />
             <div class="service-overlay">
               <span class="service-code">01 / РЕМЗОНА</span>
               <h3>Ремонт грузовиков</h3>
@@ -221,7 +224,7 @@
               <p>MAN — с системой T200. Mercedes — на дилерском диагностическом оборудовании.</p>
               <div class="price-line"><span>Диагностика на сайте-каталоге</span><strong>от 2 200 ₽</strong></div>
             </div>
-            <img src="assets/mercedes.png" alt="Оборудование для диагностики грузовых Mercedes" />
+            <img src="assets/mercedes.png" width="896" height="780" loading="lazy" decoding="async" alt="Оборудование для диагностики грузовых Mercedes" />
           </article>
 
           <article class="service-card reveal">
@@ -231,7 +234,7 @@
               <p>Ремонт и обслуживание полуприцепов и рефрижераторных установок.</p>
               <div class="price-line"><span>Ремонт в каталоге</span><strong>от 1 500 ₽</strong></div>
             </div>
-            <img src="assets/refrigerator.jpg" alt="Полуприцеп-рефрижератор" />
+            <img src="assets/refrigerator.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Полуприцеп-рефрижератор" />
           </article>
 
           <article class="service-card service-card-orange reveal">
@@ -240,7 +243,7 @@
             <p>Выездная диагностика и ремонт на месте, когда доставить грузовик в сервис невозможно.</p>
             <a
               class="text-link wa-link"
-              href="https://wa.me/79154276111?text=Здравствуйте%21%20Нужна%20выездная%20диагностика%20грузовика."
+              href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Нужна%20выездная%20диагностика%20грузовика."
               target="_blank"
               rel="noopener"
               >Описать ситуацию →</a
@@ -339,7 +342,7 @@
             >
             <a
               class="button button-outline wa-link"
-              href="https://wa.me/79154276111?text=Здравствуйте%21%20Хочу%20уточнить%20время%20заезда%20в%20сервис."
+              href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Хочу%20уточнить%20время%20заезда%20в%20сервис."
               target="_blank"
               rel="noopener"
               >WhatsApp</a
@@ -388,7 +391,7 @@
       <p>Ремонт грузовиков, коммерческой техники, полуприцепов и рефрижераторов.</p>
       <div class="footer-links">
         <a href="tel:+79154276111">Позвонить</a>
-        <a href="https://wa.me/79154276111" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Нужна%20помощь%20с%20грузовиком." target="_blank" rel="noopener">WhatsApp</a>
         <a href="https://arana.clients.site/" target="_blank" rel="noopener">Каталог услуг</a>
       </div>
       <p class="copyright">© <span id="year">2026</span> ООО «АРАНА ЛОГИСТИК»</p>
@@ -396,7 +399,7 @@
 
     <div class="mobile-actions" aria-label="Быстрые действия">
       <a href="tel:+79154276111">Позвонить</a>
-      <a class="wa-link" href="https://wa.me/79154276111" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="wa-link" data-symptom-link href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Нужна%20помощь%20с%20грузовиком." target="_blank" rel="noopener">WhatsApp</a>
     </div>
 
     <script src="script.js"></script>
