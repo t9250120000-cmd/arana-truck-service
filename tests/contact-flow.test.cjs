@@ -35,6 +35,10 @@ function setup() {
   const output = element();
   const diagnosticLink = element();
   const mobileLink = element();
+  const panel = element();
+  panel.hidden = true;
+  const fallback = element();
+  fallback.hidden = false;
   const html = fs.readFileSync(path.join(__dirname, '../dist/index.html'), 'utf8');
   const buttons = [...html.matchAll(/data-symptom="([^"]+)"/g)].map((match) => {
     const button = element();
@@ -44,6 +48,7 @@ function setup() {
   const single = {
     '.menu-toggle': menu, '.site-nav': navigation,
     '#selected-symptom': output, '#diagnostic-whatsapp': diagnosticLink,
+    '.diagnostic-panel': panel, '#diagnostic-fallback': fallback,
   };
   const multiple = { '[data-symptom]': buttons, '[data-symptom-link]': [mobileLink] };
   vm.runInNewContext(source, {
@@ -53,7 +58,7 @@ function setup() {
     },
     window: { matchMedia: () => ({ matches: true }) },
   });
-  return { menu, menuLabel, navLink, output, diagnosticLink, mobileLink, buttons };
+  return { menu, menuLabel, navLink, output, diagnosticLink, mobileLink, buttons, panel, fallback };
 }
 
 test('Every symptom reaches both WhatsApp buttons, including a second selection', () => {
@@ -81,4 +86,11 @@ test('Mobile menu label and expanded state reset after choosing a section', () =
   ui.navLink.click();
   assert.equal(ui.menu.getAttribute('aria-expanded'), 'false');
   assert.equal(ui.menuLabel.textContent, 'Открыть меню');
+});
+
+test('Interactive controls replace the direct-contact fallback only after initialization', () => {
+  const ui = setup();
+  assert.equal(ui.panel.hidden, false);
+  assert.equal(ui.fallback.hidden, true);
+  assert.equal(ui.menu.hidden, false);
 });

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Грузовой автосервис в Мещерино — ремонт грузовиков | АРАНА</title>
+    <title>Грузовой автосервис в Калиновке — ремонт грузовиков | АРАНА</title>
     <meta
       name="description"
-      content="АРАНА в Мещерино: ремонт грузовиков MAN и Mercedes, полуприцепов и рефрижераторов. Диагностика в сервисе и на выезде. Позвоните мастеру: +7 915 427-61-11."
+      content="АРАНА в Калиновке: ремонт грузовиков MAN и Mercedes, полуприцепов и рефрижераторов. Диагностика в сервисе и на выезде. Позвоните мастеру: +7 915 427-61-11."
     />
     <meta name="theme-color" content="#101820" />
     <link rel="canonical" href="https://t9250120000-cmd.github.io/arana-truck-service/" />
@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:url" content="https://t9250120000-cmd.github.io/arana-truck-service/" />
-    <meta property="og:title" content="АРАНА — грузовой автосервис в Мещерино" />
+    <meta property="og:title" content="АРАНА — грузовой автосервис в Калиновке" />
     <meta
       property="og:description"
       content="Ремонт грузовиков, полуприцепов и рефрижераторов. Диагностика в сервисе и на выезде."
@@ -30,7 +30,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Roboto+Condensed:wght@700;900&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261013-2" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,7 +43,7 @@
         "telephone": "+7-915-427-61-11",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Мещерино",
+          "addressLocality": "деревня Калиновка",
           "addressRegion": "Московская область",
           "addressCountry": "RU"
         },
@@ -51,11 +51,6 @@
           "@type": "GeoCoordinates",
           "latitude": 55.523458,
           "longitude": 37.743238
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.7",
-          "reviewCount": "10"
         },
         "sameAs": ["https://arana.clients.site/"]
       }
@@ -73,7 +68,7 @@
         </span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
         <span></span><span></span><span></span>
         <span class="sr-only">Открыть меню</span>
       </button>
@@ -94,7 +89,7 @@
     <main id="main">
       <section id="top" class="hero section-dark">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="status-dot"></span> Грузовой автосервис · Мещерино</p>
+          <p class="eyebrow"><span class="status-dot"></span> Грузовой автосервис · Калиновка</p>
           <h1>Грузовик снова<br /><em>в рейсе.</em></h1>
           <p class="hero-lead">
             Ремонтируем грузовики, полуприцепы и рефрижераторы. Проводим диагностику в сервисе
@@ -154,7 +149,14 @@
           <p>Выберите симптом — подготовим сообщение мастеру. Марку и детали можно дописать уже в WhatsApp.</p>
         </div>
 
-        <div class="diagnostic-panel reveal">
+        <div id="diagnostic-fallback" class="no-script-note">
+          <p>Свяжитесь с мастером напрямую: укажите в сообщении марку машины,
+            неисправность и местоположение.</p>
+          <a class="button button-primary" href="tel:+79154276111">Позвонить мастеру</a>
+          <a class="button button-outline" href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Нужна%20помощь%20с%20грузовиком." target="_blank" rel="noopener">Написать в WhatsApp</a>
+        </div>
+
+        <div class="diagnostic-panel reveal" hidden>
           <div class="symptom-grid" role="group" aria-label="Выберите неисправность">
             <button class="symptom is-selected" type="button" aria-pressed="true" data-symptom="Не запускается двигатель">
               <span class="symptom-icon" aria-hidden="true">↯</span>
@@ -326,7 +328,7 @@
           <p class="eyebrow dark">Контакты</p>
           <h2>Сначала — звонок.<br />Потом — маршрут.</h2>
           <p class="contact-lead">
-            Московская область, Ленинский городской округ, район Мещерино. Перед выездом свяжитесь
+            Московская область, Ленинский городской округ, деревня Калиновка. Перед выездом свяжитесь
             с мастером — подтвердим время и сориентируем по заезду для грузовой техники.
           </p>
 
@@ -363,6 +365,12 @@
           <h2>Коротко о главном</h2>
         </div>
         <div class="faq-list reveal">
+          <details>
+            <summary>Что сообщить мастеру при обращении?</summary>
+            <p>Укажите марку и модель, что случилось, запускается ли двигатель и где сейчас находится
+              автомобиль. Если на панели есть ошибка, приложите её код или фото. Для рефрижератора
+              добавьте модель установки и описание проблемы. Эти сведения помогут мастеру уточнить следующий шаг.</p>
+          </details>
           <details>
             <summary>Можно вызвать мастера к грузовику?</summary>
             <p>Да, сервис предлагает выездную диагностику и ремонт. Возможность выезда и расстояние уточняйте по телефону.</p>
@@ -402,6 +410,6 @@
       <a class="wa-link" data-symptom-link href="https://wa.me/79154276111?text=Здравствуйте%21%20Обращаюсь%20с%20сайта%20АРАНА.%20Нужна%20помощь%20с%20грузовиком." target="_blank" rel="noopener">WhatsApp</a>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20261013-2"></script>
   </body>
 </html>
